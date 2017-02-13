@@ -1,0 +1,15 @@
+* Test
+.tran 1e−5 2e−3
+*
+vcc vcc 0 12.0
+vin 100.0 ac 1.0 
+ccouple 1 base 10uF
+rbias1 vcc base 100k
+rbias2 base 0 24k
+q1 coll base emit generic
+rcollector vcc coll 3.9k
+remitter emit 0 1k
+*
+.model generic npn
+*
+.end
